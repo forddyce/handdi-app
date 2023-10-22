@@ -1,0 +1,61 @@
+$color-bg: #F3CB27;
+$color-black: #000;
+$color-yellow: #FFD700;
+
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: $color-bg;
+  font-family: "Press Start 2P";
+  color: $color-black;
+  padding-top: 95px;
+  width: 100%;
+  height: 100vh;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    padding-top: 105px;
+  }
+}
+
+button {
+  font-family: "Press Start 2P";
+}
+
+.font-custom {
+  font-family: "Press Start 2P";
+}
+
+.theme-button {
+  background-color: $color-black;
+  color: $color-yellow !important;
+  text-decoration: none;
+  padding: 12px 40px;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  line-height: 19.36px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.theme-button-inverse {
+  color: $color-black !important;
+  background-color: $color-yellow !important;
+  text-decoration: none;
+  padding: 12px 40px;
+  text-align: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  line-height: 19.36px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
