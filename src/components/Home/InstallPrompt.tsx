@@ -3,7 +3,7 @@ import { Grid, Box, Stack } from '@mui/material';
 import styles from './Index.module.scss';
 
 const InstallPrompt = () => {
-  const [supportsPWA, setSupportsPWA] = useState<boolean>(true);
+  const [supportsPWA, setSupportsPWA] = useState<boolean>(false);
   const [promptInstall, setPromptInstall] = useState<any>(null);
 
   const bookmark = () => {
@@ -48,7 +48,7 @@ const InstallPrompt = () => {
           <h2>Bookmark The App</h2>
           <p>Track all your appointments and cashback, all in one place</p>
           {!supportsPWA ? (
-            <p>Please use Chrome to open this app</p>
+            <p>You either have ever downloaded the app on your device, or you need to use Google Chrome to download the App.</p>
           ) : (
             <button className={styles.button} type="button" onClick={() => bookmark()}>
               Download App
