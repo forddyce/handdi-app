@@ -39,7 +39,7 @@ const Onboard = () => {
           >
             <h2>Partners</h2>
             <img src="./images/partner.png" alt="cat_icon" className={styles.boxIcon} />
-            <a className={styles.button} href="https://partner.handdi.io">
+            <a className={styles.button} href="https://partners.handdi.io">
               Enter
             </a>
           </Box>

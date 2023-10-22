@@ -1,11 +1,9 @@
 import Layout from '../layout/Layout';
-import { Index, NotFound } from './views';
+import { Index, Onboard, NotFound } from './views';
 
 const publicRoutes = () => {
   return [
     {
-      path: '/',
-      name: 'Home',
       errorElement: <NotFound />,
       element: <Layout />,
       children: [
@@ -13,6 +11,11 @@ const publicRoutes = () => {
           path: '/',
           name: 'Home',
           element: <Index />,
+        },
+        {
+          path: '/onboard',
+          name: 'Onboard',
+          element: <Onboard />,
         },
       ],
     },
