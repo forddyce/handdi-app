@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Grid, Box, Stack } from '@mui/material';
 import styles from './Index.module.scss';
 import PWAPrompt from 'react-ios-pwa-prompt';
@@ -74,6 +74,20 @@ const InstallPrompt = () => {
               permanentlyHideOnDismiss={false}
             />
           )}
+          <p className={styles.miniText}>Problem installing the application?</p>
+          <Link
+            to={'/onboard'}
+            className={styles.button}
+            style={{
+              marginTop: '30px',
+              fontSize: '14px',
+              lineHeight: '20px',
+              padding: '13px 20px',
+              width: '218px',
+            }}
+          >
+            Continue From Browser
+          </Link>
         </Box>
 
         <Stack spacing={3} direction="column" className={styles.footer}>
