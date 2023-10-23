@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material';
 
-const font = '"Press Start 2P"';
+const font = '"Roboto", sans-serif';
 
 export const theme = createTheme({
   breakpoints: {

@@ -1,8 +1,11 @@
 .header {
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 36px;
+  line-height: 48px;
   margin-bottom: 30px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 30px;
@@ -10,20 +13,30 @@
 }
 
 .subHeader {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  width: 100vh;
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 0 15px;
+  padding-bottom: 100px;
 }
 
 .box {
   background-color: #fff;
   color: #000;
   border-radius: 10px;
-  padding: 50px;
+  padding: 43px 29px;
   text-align: center;
   min-height: 500px;
   overflow: auto;
+  width: 100%;
   
   h2 {
     margin-bottom: 30px;
@@ -41,6 +54,18 @@
   line-height: 20px;
 }
 
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  a, button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 19px 36px;
+  }
+}
+
 .button {
   background-color: #000;
   color: #fff;
@@ -48,6 +73,7 @@
   border-radius: 10px;
   border: none;
   text-decoration: none;
+  font-weight: bold;
 
   &:hover {
     cursor: pointer;
@@ -55,11 +81,37 @@
 }
 
 .boxIcon {
-  width: 102px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   margin: 15px 0;
   object-fit: contain;
   object-position: center;
+}
+
+.steps {
+  text-align: left;
+  margin-bottom: 38px;
+
+  li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.iosIcons {
+  margin-left: 5px;
+  margin-right: 5px;
+
+  img {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+.alert {
+  margin-top: 25px;
+  font-weight: bold;
+  color: red;
 }
 
 .footer {
@@ -72,10 +124,15 @@
 
   p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 25px;
+    font-weight: bold;
   }
 
   a {
     width: fit-content;
   }
+}
+
+.muted {
+  font-weight: normal !important;
 }

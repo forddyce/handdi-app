@@ -2,12 +2,11 @@ $color-bg: #F3CB27;
 $color-black: #000;
 $color-yellow: #FFD700;
 
-// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
 
 body {
   background-color: $color-bg;
-  font-family: "Press Start 2P";
+  font-family: 'Roboto', sans-serif;
   color: $color-black;
   padding-top: 95px;
   width: 100%;
@@ -19,16 +18,20 @@ body {
 }
 
 button {
-  font-family: "Press Start 2P";
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-bold {
+  font-weight: bold;
 }
 
 .font-custom {
-  font-family: "Press Start 2P";
+  font-family: 'Roboto', sans-serif;
 }
 
 .theme-button {
   background-color: $color-black;
-  color: $color-yellow !important;
+  color: #fff !important;
   text-decoration: none;
   padding: 12px 40px;
   text-align: center;

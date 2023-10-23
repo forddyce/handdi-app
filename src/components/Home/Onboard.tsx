@@ -1,5 +1,5 @@
 import { Grid, Box, Stack } from '@mui/material';
-import styles from './Index.module.scss';
+import styles from '../../modules/Home/Index.module.scss';
 
 const Onboard = () => {
   return (
