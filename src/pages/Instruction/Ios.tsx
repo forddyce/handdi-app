@@ -36,6 +36,7 @@ const InstructioIos = () => {
                 <img src="/images/ios1.png" alt="ios_icon" />
               </span>
               icon
+              or <img src="/images/ios2.png" alt="ios_share_icon" /> icon
             </li>
             <li>
               A pop up will appear &gt; Select <strong>Add Bookmark/ Homescreen</strong>
